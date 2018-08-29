@@ -1,15 +1,13 @@
-import { observer } from 'mobx-react'
-import React from 'react'
+import { observer } from "mobx-react";
+import React from "react";
 @observer
-class TodoView extends React.Component{
-  constructor(props){
-    super(props)
+class TodoView extends React.Component {
+  constructor(props) {
+    super(props);
   }
-  render(){
-    const {todo} = this.props
-    return(
-      <li>{todo.task}</li>
-    )
+  render() {
+    const { todo } = this.props;
+    return <li>{todo.task}</li>;
   }
 }
-export default TodoView
+export default TodoView;
